@@ -311,6 +311,7 @@ h1 .value:after{
   </div>
 </div>
 
+  <script src="topics.js"></script>
 <script>
 /*
   公開済みコンテンツだけをここに追加します。
@@ -318,11 +319,7 @@ h1 .value:after{
   "rag": { label: "RAG", url: "rag.html" }
   "aiエージェント": { label: "AIエージェント", url: "ai-agent.html" }
 */
-const topics = {
-  "llm": { label: "LLM", url: "llm.html" },
-  "トークン": { label: "トークン", url: "token.html" },
-  "token": { label: "トークン", url: "token.html" }
-};
+const topics = window.AI_NO_SONOSAKI_TOPICS || {};
 
 const form = document.getElementById("keywordForm");
 const input = document.getElementById("keyword");
